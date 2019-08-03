@@ -1,6 +1,15 @@
 (function($) {
   "use strict"; // Start of use strict
 
+  setTimeout(function () {
+    $('#find-out-more').css('visibility', 'visible');
+  }, 5000);
+
+  setTimeout(function () {
+    $('#find-out-more').removeClass("animated");
+    $('#find-out-more').removeClass("pulse");
+  }, 10000);
+
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -26,12 +35,16 @@
     offset: 56
   });
 
+  $("#presidentialCell").css("max-width",$("#financeCell").width());
+
   // Collapse Navbar
   var navbarCollapse = function() {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
+      $(".nav-logo").addClass("shrink-nav-logo");
     } else {
       $("#mainNav").removeClass("navbar-shrink");
+      $(".nav-logo").removeClass("shrink-nav-logo");
     }
   };
   // Collapse now if page is not at top
