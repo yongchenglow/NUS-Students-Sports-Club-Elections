@@ -21,7 +21,7 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
   <!-- Custom styles for this template -->
-  <link href="css/agency_v2.css" rel="stylesheet">
+  <link href="css/agency_v4.css" rel="stylesheet">
 
   <!-- Animate.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
@@ -44,6 +44,9 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#timeline">Timeline</a>
           </li>
           <li class="nav-item">
@@ -51,9 +54,6 @@
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -68,26 +68,144 @@
     <div class="container">
       <div class="intro-text">
         <div class="semi-transparent-background animated flipInX delay-2s">
-          <div class="intro-lead-in animated flipInX delay-3s">40th MC Elections are opened!</div>
-          <div class="intro-heading text-uppercase animated flipInX delay-4s">Its <u>your</u> time to change the world!</div>
+          <div class="intro-heading text-uppercase">Its <u>your</u> time to change the world!</div>
         </div>
-        <a id="find-out-more" class="btn btn-primary btn-xl text-uppercase js-scroll-trigger animated pulse" style="margin-top:30px;visibility:hidden;" href="#timeline">Tell Me More</a>
+        <div class="semi-transparent-background animated flipInX delay-3s">
+          <div class="intro-lead-in text-uppercase">Nominations are now open for the 40th Sports Club Management Committee!</div>
+        </div>
+        <!-- <a id="find-out-more" class="btn btn-primary btn-xl text-uppercase js-scroll-trigger animated pulse" style="margin-top:30px;visibility:hidden;" href="#timeline">Tell Me More</a> -->
       </div>
     </div>
   </header>
 
-  <!-- Services -->
+  <!-- About -->
+  <section class="page-section" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">More about us</h2>
+          <h3 class="section-subheading text-muted">"Leadership is not about a title or a designation. It's about impact, influence and inspiration. Impact involves getting results, influence is about spreading the passion you have for your work, and you have to inspire team-mates and customers." ~ Robin S. Sharma</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" alt="Synergy Video" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FNUSSportsClub%2Fvideos%2F2128916320691425%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
   <section class="page-section" id="timeline">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Timeline</h2>
-          <h3 class="section-subheading text-muted">"By failing to prepare, you are preparing to fail" ~ Benjamin Franklin</h3>
+          <h2 class="section-heading text-uppercase">Election Timeline</h2>
+          <h3 class="section-subheading text-muted" style="margin-bottom:10px;">"By failing to prepare, you are preparing to fail" ~ Benjamin Franklin</h3>
+          <a href="doc/Sports_Club_Management_Committee.pdf">
+            <h6 style="margin-bottom:50px;">Read the <u>Election Regulations</u> before proceeding</h6>
+          </a>
         </div>
       </div>
       <div class="row">
-        <div class="col-12">
-          <img class="img-fluid" src="img/Timeline/Election_Timeline.png" alt="Election Timeline">
+        <div class="col-lg-12">
+          <ul class="timeline">
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/Timeline/form.png" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h5>5 to 21 August</h5>
+                  <h4 class="subheading">Nominations</h4>
+                </div>
+                <div class="timeline-body">
+                  <a href="https://orgsync.com/140428/forms/368500/" target="_blank">
+                    <p class="text-muted">Fill in <u>this</u> form!</p>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/Timeline/interview.png" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h5>21 to 27 August</h5>
+                  <h4 class="subheading">Interviews</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Talk to us and find out more about each role in the MC!</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/Timeline/campaign.png" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h5>22 to 27 August</h5>
+                  <h4 class="subheading">Campaigning</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Let everyone know that you are running!</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/Timeline/vote.png" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h5>28 to 30 August</h5>
+                  <h4 class="subheading">External Elections</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Ask your friends to vote!</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/Timeline/results.png" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h5>1 September</h5>
+                  <h4 class="subheading">External Elections Results</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Find out if you are elected!</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/Timeline/internal.png" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h5>7 September</h5>
+                  <h4 class="subheading">Internal Elections</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Go the extra mile & step up as an EXCO member!</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <h5>20 September</h5>
+          <h4>Annual General Meeting</h4>
+          <p class="text-muted">Welcome to the 40th!</p>
         </div>
       </div>
     </div>
@@ -222,7 +340,7 @@
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/Projects/Sports_Camp.jpg" alt="NUS Sports Camp">
             <h4>NUS Sports Camp</h4>
-            <p class="text-muted">NUS Largest Non-Faculty Camp</p>
+            <p class="text-muted">NUS Largest Cross-Faculty Camp</p>
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
                 <a href="https://www.facebook.com/nussscsc/" target="_blank">
@@ -270,7 +388,7 @@
         </div>
         <div class="col-sm-4">
           <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/Projects/IFG.jpg" alt="IFG">
+            <img class="mx-auto rounded-circle" src="img/Projects/IFG.png" alt="IFG">
             <h4>Inter-Faculty Games</h4>
             <p class="text-muted">NUS Largest Student Life Event</p>
             <ul class="list-inline social-buttons">
@@ -319,53 +437,6 @@
       </div>
     </div>
   </section>
-
-  <!-- About -->
-  <section class="page-section" id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">More about us</h2>
-          <h3 class="section-subheading text-muted">"Leadership is not about a title or a designation. It's about impact, influence and inspiration. Impact involves getting results, influence is about spreading the passion you have for your work, and you have to inspire team-mates and customers." ~ Robin S. Sharma</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" alt="Synergy Video" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FNUSSportsClub%2Fvideos%2F2128916320691425%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Clients -->
-  <!-- <section class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section> -->
 
   <!-- Contact -->
   <section class="page-section" id="contact">
@@ -417,7 +488,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-4">
-          <span class="copyright">NUS Students' Spors Club 2019 &copy;</span>
+          <span class="copyright">NUS Students' Sports Club 2019 &copy;</span>
         </div>
         <div class="col-md-4">
           <ul class="list-inline social-buttons">
