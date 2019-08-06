@@ -1,15 +1,6 @@
 (function($) {
   "use strict"; // Start of use strict
 
-  setTimeout(function () {
-    $('#find-out-more').css('visibility', 'visible');
-  }, 5000);
-
-  setTimeout(function () {
-    $('#find-out-more').removeClass("animated");
-    $('#find-out-more').removeClass("pulse");
-  }, 10000);
-
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
