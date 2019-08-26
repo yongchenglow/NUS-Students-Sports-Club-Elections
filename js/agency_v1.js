@@ -1,12 +1,40 @@
 (function($) {
   "use strict"; // Start of use strict
 
+  $( "#nominate" ).click(function() {
+    $.confirm({
+      theme: 'modern',
+      escapeKey: true,
+      type: 'red',
+      title: 'Nominate yourself',
+      content: ' <img class="img-fluid" src="img/others/nominate.png" style="max-width:150px;" alt="">'
+      +'<div>"Leadership is about vision and responsibility, not power." ~ Seth Berkley</div>',
+      columnClass: 'col-sm-9 col-md-7 col-lg-5',
+      closeIcon: true,
+      buttons: {
+          sportsClub: {
+              text: "NUS Students' Sports Club",
+              btnClass: 'btn-red',
+              action: function(){
+                location.href = "https://orgsync.com/140428/forms/368500/";
+              }
+          },
+          nussuExcoRep: {
+              text: "NUSSU Exco Rep (Sports)",
+              action: function(){
+                location.href = window.location.href + "doc/Nomination_Form.docx";
+              }
+          },
+      },
+    });
+  });
+
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
+      if (target.length){
         $('html, body').animate({
           scrollTop: (target.offset().top - 54)
         }, 1000, "easeInOutExpo");
@@ -27,6 +55,7 @@
   });
 
   $("#presidentialCell").css("max-width",$("#financeCell").width());
+  $("#nussuExcoRep").css("max-width",$("#financeCell").width());
 
   // Collapse Navbar
   var navbarCollapse = function() {

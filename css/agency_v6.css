@@ -635,6 +635,15 @@ header.masthead .intro-text .intro-heading {
   width: 225px;
   height: 225px;
   border: 7px solid rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.timeline-image:hover {
+  border: 7px solid #EB1C24 !important;
+}
+
+.team-member img:hover {
+  border: 7px solid #EB1C24;
 }
 
 .team-member h4 {
