@@ -6,23 +6,51 @@
       theme: 'modern',
       escapeKey: true,
       type: 'red',
-      title: 'Nominate yourself',
+      title: 'Vote for the 40th',
       content: ' <img class="img-fluid" src="img/others/nominate.png" style="max-width:150px;" alt="">'
       +'<div>"Leadership is about vision and responsibility, not power." ~ Seth Berkley</div>',
       columnClass: 'col-sm-9 col-md-7 col-lg-5',
       closeIcon: true,
       buttons: {
           sportsClub: {
-              text: "NUS Students' Sports Club",
+              text: "Vote for NUS Students' Sports Club",
               btnClass: 'btn-red',
               action: function(){
-                location.href = "https://orgsync.com/140428/forms/368500/";
+                location.href = "https://bit.ly/nusssc40thvote";
               }
           },
           nussuExcoRep: {
-              text: "NUSSU Exco Rep (Sports)",
+              text: "Vote for NUSSU Exco Rep (Sports)",
               action: function(){
-                location.href = window.location.href + "doc/Nomination_Form.docx";
+                location.href = "https://orgsync.com/140428/forms/369651";
+              }
+          },
+      },
+    });
+  });
+
+  $( "#vote" ).click(function() {
+    $.confirm({
+      theme: 'modern',
+      escapeKey: true,
+      type: 'red',
+      title: 'Vote for the 40th',
+      content: ' <img class="img-fluid" src="img/others/nominate.png" style="max-width:150px;" alt="">'
+      +'<div>"Leadership is about vision and responsibility, not power." ~ Seth Berkley</div>',
+      columnClass: 'col-sm-9 col-md-7 col-lg-5',
+      closeIcon: true,
+      buttons: {
+          sportsClub: {
+              text: "Vote for NUS Students' Sports Club",
+              btnClass: 'btn-red',
+              action: function(){
+                location.href = "https://bit.ly/nusssc40thvote";
+              }
+          },
+          nussuExcoRep: {
+              text: "Vote for NUSSU Exco Rep (Sports)",
+              action: function(){
+                location.href = "https://orgsync.com/140428/forms/369651";
               }
           },
       },
